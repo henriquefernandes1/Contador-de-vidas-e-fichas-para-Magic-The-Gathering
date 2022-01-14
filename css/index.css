@@ -1,0 +1,46 @@
+html body{
+    background-color: black;
+    background-image: url(../imagens/fundo.png);
+    background-size: contain;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+i{
+    font-size: 3em;
+}
+
+#containerContador{
+    background-image: url(../imagens/fundoDivContador.png);
+    background-repeat: repeat;
+    display: flex;
+    justify-content:space-between;
+    align-items: stretch;
+    height: 60vh;
+}
+
+#contador{
+    font-size: 5em;
+    color: red;
+}
+
+.containerContadorFilho{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoContador{
+    background: none;
+    border: none;
+}
+
+
+
+
