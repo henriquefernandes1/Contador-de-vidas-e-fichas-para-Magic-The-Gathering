@@ -39,6 +39,12 @@ i{
 .botaoContador{
     background: none;
     border: none;
+    border-radius: 100%;
+}
+
+.botaoContador:focus{
+    border: none;
+    outline: none;
 }
 
 

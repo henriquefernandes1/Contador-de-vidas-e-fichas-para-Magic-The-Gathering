@@ -2,22 +2,24 @@ $(document).ready(function () {
     vida.innerHTML = 20
 });
 
+const vidaZerada = document.querySelector("#vida");
+
 let i = 20;
 
 function adicionarVida() {
     i++;
-    vida.innerHTML=i;
+    vida.innerHTML = i;
 }
 
 function retirarVida() {
     i--;
-    vida.innerHTML=i;
+    vida.innerHTML = i;
 
-    if(i<=-1){
+    if (vidaZerada.textContent <= 0) {
         alert("Você perdeu!");
-        vida.innerHTML=0;
+        vida.innerHTML = 0;
 
-        return i=0;
+        return i = 0;
     }
 }
 
