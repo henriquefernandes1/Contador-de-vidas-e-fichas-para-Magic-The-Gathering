@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bb1889e446.js" crossorigin="anonymous"></script>
     <title>Contador de vida e fichas - MTG</title>
 </head>
 
 <body>
-    
-    <div class="container mt-3" id="containerContador"> 
+
+    <!--Div do container do contador-->
+
+    <div class="container mt-3" id="containerContador">
         <div class="containerContadorFilho" id="botaoDecremento">
-            <button class="botaoContador" onclick="retirarVida()"><i class="fas fa-minus-circle" style="color: white;"></i></button>
+            <button class="botaoContador" id="retirarVida"><i class="fas fa-minus-circle"
+                    style="color: white;"></i></button>
         </div>
 
         <div class="containerContadorFilho" id="contador">
@@ -24,9 +28,12 @@
         </div>
 
         <div class="containerContadorFilho" id="botaoIncremento">
-            <button class="botaoContador" onclick="adicionarVida()"><i class="fas fa-plus-circle" style="color: white;"></i></button>
+            <button class="botaoContador" id="adicionarVida"><i class="fas fa-plus-circle"
+                    style="color: white;"></i></button>
         </div>
     </div>
+
+    <!--Div do container das fichas-->
 
     <script src="./JS/contador.js"></script>
 

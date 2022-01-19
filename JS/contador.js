@@ -1,25 +1,29 @@
-$(document).ready(function () {
-    vida.innerHTML = 20
-});
+const menosVida = document.querySelector("#retirarVida");
+const maisVida = document.querySelector("#adicionarVida");
+const vidaInicial = document.querySelector("#contador");
 
-const vidaZerada = document.querySelector("#vida");
-
+vidaInicial.innerHTML = 20;
 let i = 20;
 
-function adicionarVida() {
+maisVida.addEventListener("click", function () {
     i++;
-    vida.innerHTML = i;
-}
+    vidaInicial.innerHTML = i;
+    return i;
 
-function retirarVida() {
+});
+
+menosVida.addEventListener("click", function () {
     i--;
-    vida.innerHTML = i;
+    vidaInicial.innerHTML = i;
 
-    if (vidaZerada.textContent <= 0) {
+    if (i < 1) {
         alert("Você perdeu!");
-        vida.innerHTML = 0;
+        vidaInicial.innerHTML = 0;
 
-        return i = 0;
     }
-}
+    return i;
+});
+
+
+
 
