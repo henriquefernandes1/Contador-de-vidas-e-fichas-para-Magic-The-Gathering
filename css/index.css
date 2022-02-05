@@ -1,6 +1,6 @@
 html body{
     background-color: black;
-    background-image: url(../imagens/fundo.png);
+    background-image: url(../imagens/DIV/fundo.png);
     background-size: contain;  
     background-repeat: no-repeat; 
     background-position: center;
@@ -16,7 +16,7 @@ i{
 }
 
 #containerContador{
-    background-image: url(../imagens/fundoDivContador.png);
+    background-image: url(../imagens/DIV/fundoDivContador.png);
     background-repeat: repeat;
     display: flex;
     justify-content:space-between;
@@ -27,6 +27,18 @@ i{
 #contador{
     font-size: 5em;
     color: red;
+}
+
+#containerFichas{
+    display: flex;
+    height: 40vh;
+    justify-content:space-between;
+}
+
+#adicionarFicha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .containerContadorFilho{
@@ -46,7 +58,6 @@ i{
     border: none;
     outline: none;
 }
-
 
 
 

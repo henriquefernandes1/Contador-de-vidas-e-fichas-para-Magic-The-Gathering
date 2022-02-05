@@ -1,6 +1,6 @@
 const menosVida = document.querySelector("#retirarVida");
 const maisVida = document.querySelector("#adicionarVida");
-const vidaInicial = document.querySelector("#contador");
+const vidaInicial = document.querySelector("#vida");
 
 vidaInicial.innerHTML = 20;
 let i = 20;
@@ -17,11 +17,16 @@ menosVida.addEventListener("click", function () {
     vidaInicial.innerHTML = i;
 
     if (i < 1) {
-        alert("Você perdeu!");
         vidaInicial.innerHTML = 0;
+        alert("Você perdeu! \n"+"Clique duas vezes sobre o contador para reiniciar");
 
     }
     return i;
+});
+
+vidaInicial.addEventListener("dblclick", function(){
+    vidaInicial.innerHTML=20;
+    i=20;
 });
 
 

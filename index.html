@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bb1889e446.js" crossorigin="anonymous"></script>
+
     <title>Contador de vida e fichas - MTG</title>
 </head>
 
@@ -17,13 +17,13 @@
 
     <!--Div do container do contador-->
 
-    <div class="container mt-3" id="containerContador">
+    <div class="container mt-2" id="containerContador" style="border: green 2px solid;">
         <div class="containerContadorFilho" id="botaoDecremento">
             <button class="botaoContador" id="retirarVida"><i class="fas fa-minus-circle"
                     style="color: white;"></i></button>
         </div>
 
-        <div class="containerContadorFilho" id="contador">
+        <div class="containerContadorFilho" id="contador" style="border: yellow 2px solid;">
             <span id="vida"></span>
         </div>
 
@@ -34,8 +34,46 @@
     </div>
 
     <!--Div do container das fichas-->
+    <div class="container mb-2" id="containerFichas" style="border: yellow 2px solid;">
 
-    <script src="./JS/contador.js"></script>
+        <div class="container-fluid mr-1" id="adicionarFicha" style="border: green 2px solid; text-align: center;">
+            <div class="container-fluid" id="listaFichas" style="border: blue 2px solid; overflow: auto; ">
+                <div class="container-fluid" style="border: green 2px solid;">
+
+                    <tbody id="tabelaFicha">
+                        <tr>
+                            <td>
+                                <h6>Teste</h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h6>Teste</h6>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </div>
+
+                <button type="button" id="addFicha" class="btn btn-success ">Adicionar ficha</button>
+
+            </div>
+
+            <div class="container-fluid" id="ficaInfo" style="border: blueviolet 2px solid;">
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid ml-1 " style="border: red 2px solid; ">
+
+        </div>
+    </div>
+
+    <!--Tags de script-->
+
+    <script src="./JS/contador.js " defer></script>
+    <script src="./JS/fichas.js " defer></script>
 
 </body>
 
