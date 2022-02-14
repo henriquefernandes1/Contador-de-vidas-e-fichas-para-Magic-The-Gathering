@@ -1,63 +1,63 @@
-html body{
+html body {
     background-color: black;
     background-image: url(../imagens/DIV/fundo.png);
-    background-size: contain;  
-    background-repeat: no-repeat; 
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    
 }
 
-i{
+i {
     font-size: 3em;
 }
 
-#containerContador{
+#containerContador {
     background-image: url(../imagens/DIV/fundoDivContador.png);
     background-repeat: repeat;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: stretch;
     height: 60vh;
 }
 
-#contador{
+#contador {
     font-size: 5em;
     color: red;
 }
 
-#containerFichas{
+#containerFichas {
     display: flex;
     height: 40vh;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-#adicionarFicha{
+#adicionarFicha {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.containerContadorFilho{
+.containerContadorFilho {
     width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.botaoContador{
+.botaoContador {
     background: none;
     border: none;
     border-radius: 100%;
 }
 
-.botaoContador:focus{
+.botaoContador:focus {
     border: none;
     outline: none;
 }
 
-
-
+.divTableFicha {
+    background-color: whitesmoke;
+}
