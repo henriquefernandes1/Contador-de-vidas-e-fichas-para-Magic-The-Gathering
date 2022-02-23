@@ -32,6 +32,10 @@ function criaTable(NomeFicha) {
     const tdFicha = document.getElementById(`id_${NomeFicha}`);
     tdFicha.textContent = NomeFicha;
 
+    if (NomeFicha = "") {
+        criaTr.removeChild(criaTr.lastChild);
+    };
+
     console.log(tabela);
 
     return (tabela);
